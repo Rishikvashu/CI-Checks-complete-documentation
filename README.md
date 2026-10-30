@@ -4,35 +4,39 @@
 
 ---
 
+<a id="table-of-contents"></a>
+
 # Table of Contents
 
-1. Introduction to CI Checks
-2. What Is Continuous Integration?
-3. Why Do We Need CI Checks?
-4. How CI Checks Work
-5. Types of CI Checks
-6. Source Code and Repository Checks
-7. Code Quality and Static Analysis
-8. Security Checks
-9. Dependency and Package Checks
-10. Unit Testing
-11. Integration Testing
-12. API Testing
-13. Database Testing
-14. Code Coverage
-15. Build and Packaging Checks
-16. Configuration and Infrastructure Checks
-17. Docker and Container Checks
-18. CI/CD Tools and Their Responsibilities
-19. Complete CI Tools Comparison
-20. Recommended CI Pipeline for Python Microservices
-21. Jenkins Pipeline Execution Flow
-22. Understanding Pipeline Failures
-23. Best Practices
-24. Final Checklist
-25. Glossary
+1. [Introduction to CI Checks](#s1)
+2. [What Is Continuous Integration?](#s2)
+3. [Why Do We Need CI Checks?](#s3)
+4. [How CI Checks Work](#s4)
+5. [Types of CI Checks](#s5)
+6. [Source Code and Repository Checks](#s6)
+7. [Code Quality and Static Analysis](#s7)
+8. [Security Checks](#s8)
+9. [Dependency and Package Checks](#s9)
+10. [Unit Testing](#s10)
+11. [Integration Testing](#s11)
+12. [API Testing](#s12)
+13. [Database Testing](#s13)
+14. [Code Coverage](#s14)
+15. [Build and Packaging Checks](#s15)
+16. [Configuration and Infrastructure Checks](#s16)
+17. [Docker and Container Checks](#s17)
+18. [CI/CD Tools and Their Responsibilities](#s18)
+19. [Complete CI Tools Comparison](#s19)
+20. [Recommended CI Pipeline for Python Microservices](#s20)
+21. [Jenkins Pipeline Execution Flow](#s21)
+22. [Understanding Pipeline Failures](#s22)
+23. [Best Practices](#s23)
+24. [Final Checklist](#s24)
+25. [Glossary](#s25)
 
 ---
+
+<a id="s1"></a>
 
 # 1. Introduction to CI Checks
 
@@ -86,7 +90,11 @@ Isse faulty code ko aage deploy hone se roka ja sakta hai.
 
 **Important:** Har CI pipeline mein saare checks mandatory nahi hote. Checks ka selection project ki language, architecture, security requirements aur deployment process par depend karta hai.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s2"></a>
 
 # 2. What Is Continuous Integration?
 
@@ -137,7 +145,11 @@ Agar successful build staging environment mein deploy hota hai aur production de
 
 Agar successful changes automatically production mein deploy hote hain, to ye Continuous Deployment workflow ho sakta hai.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s3"></a>
 
 # 3. Why Do We Need CI Checks?
 
@@ -199,7 +211,11 @@ Har developer ke code par same automated checks execute kiye ja sakte hain.
 
 Isse code review aur quality assurance zyada consistent ho jaate hain.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s4"></a>
 
 # 4. How CI Checks Work
 
@@ -289,7 +305,11 @@ Jenkins pipeline result:
 
 Agar mandatory stage fail hoti hai, to pipeline ko fail karna chahiye.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s5"></a>
 
 # 5. Types of CI Checks
 
@@ -320,7 +340,11 @@ CI checks ko unke purpose ke basis par categories mein divide kiya ja sakta hai.
 
 Ye saari categories har project mein required nahi hoti. Ek practical pipeline project ke risk aur requirements ke hisaab se inmein se suitable checks select karti hai.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s6"></a>
 
 # 6. Source Code and Repository Checks
 
@@ -363,7 +387,11 @@ Git commands application ke functional correctness ko prove nahi karti.
 
 `git diff --check` successful hone ka matlab ye nahi hai ki application ke tests bhi pass hain.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s7"></a>
 
 # 7. Code Quality and Static Analysis
 
@@ -491,7 +519,11 @@ total = price - discount
 
 Ye syntactically valid hai, lekin business requirement addition ki ho to logic galat ho sakta hai.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s8"></a>
 
 # 8. Security Checks
 
@@ -634,7 +666,11 @@ Isliye ise generally build aur basic tests ke baad staging ya dedicated test env
 
 Production systems par scanning karne se pehle authorization aur operational impact consider karna zaroori hai.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s9"></a>
 
 # 9. Dependency and Package Checks
 
@@ -714,7 +750,11 @@ Lekin dependency installation successful hone se application ki runtime compatib
 
 Iske liye tests execute karne hote hain.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s10"></a>
 
 # 10. Unit Testing
 
@@ -784,7 +824,11 @@ use kiye ja sakte hain.
 
 Pytest khud database correctness ya application correctness guarantee nahi karta. Test cases ki quality aur coverage bhi important hain.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s11"></a>
 
 # 11. Integration Testing
 
@@ -845,7 +889,11 @@ Isse developers ko har test environment mein manually permanent database configu
 
 Lekin Testcontainers ke liye Docker-compatible runtime aur appropriate environment configuration required hoti hai.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s12"></a>
 
 # 12. API Testing
 
@@ -918,7 +966,11 @@ Postman/Newman existing Postman collections ko automate karne ke liye useful hai
 
 Dono use karna mandatory nahi hai.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s13"></a>
 
 # 13. Database Testing
 
@@ -981,7 +1033,11 @@ Migration tests verify kar sakte hain ki:
 
 Database integration tests ko isolated test database par run karna chahiye, production database par nahi.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s14"></a>
 
 # 14. Code Coverage
 
@@ -1050,7 +1106,11 @@ Isliye meaningful test cases aur boundary conditions important hain.
 
 **Important:** Code coverage aur code quality alag concepts hain.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s15"></a>
 
 # 15. Build and Packaging Checks
 
@@ -1092,7 +1152,11 @@ Actual artifact names project configuration par depend karte hain.
 
 Dono checks ek doosre ke alternatives nahi hain.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s16"></a>
 
 # 16. Configuration and Infrastructure Checks
 
@@ -1188,7 +1252,11 @@ ansible-lint
 
 Ye Ansible playbooks aur related files mein selected best-practice violations aur potential problems identify karta hai.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s17"></a>
 
 # 17. Docker and Container Checks
 
@@ -1259,7 +1327,11 @@ Trivy aur Gitleaks ka purpose exactly same nahi hai.
 
 Gitleaks ka main focus secret detection hai, jabki Trivy multiple security scanning categories support karta hai.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s18"></a>
 
 # 18. CI/CD Tools and Their Responsibilities
 
@@ -1391,7 +1463,11 @@ Primary purpose:
 
 Running web application par selected security tests perform karna.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s19"></a>
 
 # 19. Complete CI Tools Comparison
 
@@ -1421,7 +1497,11 @@ Running web application par selected security tests perform karna.
 
 **Note:** “Application execute nahi karta” ka matlab ye nahi hai ki tool ke execution mein koi process ya helper code run nahi hota. Table application ki business logic ko test karne ke context mein hai.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s20"></a>
 
 # 20. Recommended CI Pipeline for Python Microservices
 
@@ -1474,7 +1554,11 @@ Ek small Python API ke liye initial stages mein Gitleaks, Ruff, Poetry, Pytest a
 
 Baad mein integration tests, coverage gates, SonarQube aur container scanning add kar sakte ho.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s21"></a>
 
 # 21. Jenkins Pipeline Execution Flow
 
@@ -1569,7 +1653,11 @@ Kuch teams initial adoption phase mein selected warnings ko report-only mode mei
 
 Lekin high-risk security findings ko bina clear policy ke ignore karna recommended nahi hai.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s22"></a>
 
 # 22. Understanding Pipeline Failures
 
@@ -1594,7 +1682,11 @@ CI failure ko samajhne ke liye humein failure ke source ko identify karna hota h
 
 Failure infrastructure, credentials, network connectivity, dependency repositories ya test environment ki wajah se bhi ho sakta hai.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s23"></a>
 
 # 23. Best Practices
 
@@ -1660,7 +1752,11 @@ Code validate karna aur production mein deploy karna alag responsibilities hain.
 
 Deployment ke liye additional approvals, environment checks aur rollback strategy ki zaroorat ho sakti hai.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s24"></a>
 
 # 24. Final Checklist
 
@@ -1717,7 +1813,11 @@ Python microservice ke liye CI pipeline banate waqt is checklist ka use kar sakt
 * [ ] Deployment tests appropriate environment mein execute hote hain.
 * [ ] Production deployment controls configured hain.
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="s25"></a>
 
 # 25. Glossary
 
@@ -1747,7 +1847,11 @@ Python microservice ke liye CI pipeline banate waqt is checklist ka use kar sakt
 | False Positive         | Finding jo actual issue nahi hoti                                   |
 | Fail Fast              | Early stage mein problem detect karke unnecessary execution rokna   |
 
+[⬆ Back to ToC](#table-of-contents)
+
 ---
+
+<a id="conclusion"></a>
 
 # Conclusion
 
@@ -1774,3 +1878,5 @@ In tools ka selection project ke requirements ke according karna chahiye.
 Sabse important principle ye hai:
 
 **Har tool ka ek clearly defined purpose hona chahiye, aur har mandatory check ka result pipeline mein enforce hona chahiye.**
+
+[⬆ Back to ToC](#table-of-contents)
